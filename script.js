@@ -101,49 +101,33 @@ for (let i = 1; i <= TOTAL_PAGES; i++) {
 
   const fileInput = zone.querySelector('input[type="file"]');
 
-  // ── Auto-load from assets folder ──
-  const padded  = String(pageNum).padStart(2, '0');
-  const videoSrc = `assets/videos/page-${padded}.mp4`;
-  const imgExts  = ['webp', 'jpg', 'jpeg', 'png'];
+// ── Auto-load from assets folder ──
+const padded = String(pageNum).padStart(2, '0');
 
-  function tryLoadImage(s, z, exts, idx) {
-    if (idx >= exts.length) {
-      const sv = loadSaved();
-      if (sv[s.dataset.index]) renderMedia(s, z, sv[s.dataset.index].type, sv[s.dataset.index].src);
-      return;
+if (VIDEO_PAGES.has(pageNum)) {
+  renderMedia(slot, zone, 'video', `assets/videos/page-${padded}.mp4`);
+} else {
+  tryLoadImage(0);
+}
+
+function tryLoadImage(idx) {
+  const exts = ['webp', 'jpg', 'jpeg', 'png'];
+
+  if (idx >= exts.length) {
+    const sv = loadSaved();
+    if (sv[slot.dataset.index]) {
+      renderMedia(slot, zone, sv[slot.dataset.index].type, sv[slot.dataset.index].src);
     }
-    const src  = `assets/images/page-${s.querySelector('.slot-num').textContent.slice(0,2)}.${exts[idx]}`;
-    const test = new Image();
-    test.onload  = () => renderMedia(s, z, 'image', src);
-    test.onerror = () => tryLoadImage(s, z, exts, idx + 1);
-    test.src = src;
+    return;
   }
 
-  (function (s, z, vSrc, pg) {
-    const padPg = String(pg).padStart(2, '0');
-    const vidEl = document.createElement('video');
-    vidEl.oncanplay = () => { vidEl.remove(); renderMedia(s, z, 'video', vSrc); };
-    vidEl.onerror   = () => {
-      vidEl.remove();
-      // try image extensions
-      const exts = ['webp', 'jpg', 'jpeg', 'png'];
-      function tryImg(idx) {
-        if (idx >= exts.length) {
-          const sv = loadSaved();
-          if (sv[s.dataset.index]) renderMedia(s, z, sv[s.dataset.index].type, sv[s.dataset.index].src);
-          return;
-        }
-        const src  = `assets/images/page-${padPg}.${exts[idx]}`;
-        const test = new Image();
-        test.onload  = () => renderMedia(s, z, 'image', src);
-        test.onerror = () => tryImg(idx + 1);
-        test.src = src;
-      }
-      tryImg(0);
-    };
-    vidEl.src     = vSrc;
-    vidEl.preload = 'metadata';
-  })(slot, zone, videoSrc, pageNum);
+  const src = `assets/images/page-${padded}.${exts[idx]}`;
+  const test = new Image();
+
+  test.onload = () => renderMedia(slot, zone, 'image', src);
+  test.onerror = () => tryLoadImage(idx + 1);
+  test.src = src;
+}
 
   // ── File input change ──
   fileInput.addEventListener('change', (e) => {
