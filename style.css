@@ -458,66 +458,6 @@ img, video { display: block; width: 100%; }
   color: #000;
 }
 
-/* ── Download Section ── */
-.download-section {
-  background: #F8F6F6;
-  color: var(--black);
-  width: 100%;
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.download-inner {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: clamp(16px, 2vw, 36px);
-}
-
-.download-label {
-  font-size: clamp(9px, 0.625vw, 12px);
-  font-weight: 500;
-  letter-spacing: 0.25em;
-  opacity: 0.4;
-  text-transform: uppercase;
-}
-
-.download-title {
-  font-size: clamp(24px, 3.125vw, 60px);
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-
-.download-desc {
-  font-size: clamp(10px, 0.729vw, 14px);
-  opacity: 0.5;
-  line-height: 1.6;
-}
-
-.download-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: clamp(10px, 0.625vw, 12px);
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  border: 1.5px solid var(--black);
-  padding: clamp(12px, 1.25vw, 24px) clamp(24px, 2.5vw, 48px);
-  transition: background 0.2s, color 0.2s;
-}
-
-.download-btn:hover {
-  background: var(--black);
-  color: var(--white);
-}
-
-.download-btn svg { flex-shrink: 0; }
-
 /* ── Footer ── */
 .footer {
   background: #F8F6F6;
