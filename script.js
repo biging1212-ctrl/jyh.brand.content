@@ -103,7 +103,7 @@ for (let i = 1; i <= TOTAL_PAGES; i++) {
   // ── Auto-load from assets folder ──
   const padded  = String(pageNum).padStart(2, '0');
   const videoSrc = `assets/videos/page-${padded}.mp4`;
-  const imgExts  = ['webp'];
+  const imgExts  = ['webp', 'jpg', 'jpeg', 'png'];
 
   function tryLoadImage(s, z, exts, idx) {
     if (idx >= exts.length) {
@@ -125,7 +125,7 @@ for (let i = 1; i <= TOTAL_PAGES; i++) {
     vidEl.onerror   = () => {
       vidEl.remove();
       // try image extensions
-      const exts = ['jpg', 'jpeg', 'png', 'webp'];
+      const exts = ['webp', 'jpg', 'jpeg', 'png'];
       function tryImg(idx) {
         if (idx >= exts.length) {
           const sv = loadSaved();
