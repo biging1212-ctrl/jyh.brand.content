@@ -103,7 +103,7 @@ for (let i = 1; i <= TOTAL_PAGES; i++) {
   // ── Auto-load from assets folder ──
   const padded  = String(pageNum).padStart(2, '0');
   const videoSrc = `assets/videos/page-${padded}.mp4`;
-  const imgExts  = ['jpg', 'jpeg', 'png', 'webp'];
+  const imgExts  = ['webp'];
 
   function tryLoadImage(s, z, exts, idx) {
     if (idx >= exts.length) {
