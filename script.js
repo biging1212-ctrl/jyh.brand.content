@@ -86,8 +86,8 @@ for (let i = 1; i <= TOTAL_PAGES; i++) {
   numBadge.textContent = `${String(pageNum).padStart(2, '0')} / ${FINAL_PAGE_TOTAL}`;
   slot.appendChild(numBadge);
 
-// ── PAGE 54: YouTube Video ──
-if (pageNum === 54) {
+// ── PAGE 17: YouTube Video ──
+if (pageNum === 17) {
   slot.classList.add('youtube-page');
 
   const videoWrap = document.createElement('div');
