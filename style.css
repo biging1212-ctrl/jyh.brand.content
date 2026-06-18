@@ -408,7 +408,7 @@ img, video { display: block; width: 100%; }
   font-family: var(--font);
 }
 
-/* ── Page 17: YouTube Video ── */
+/* ── Page 61: YouTube Video ── */
 .youtube-page {
   position: relative;
   background: #FF7B23;
@@ -433,7 +433,7 @@ img, video { display: block; width: 100%; }
   border: 0;
 }
 
-/* ── Page 82: Closing ── */
+/* ── Page 76: Closing ── */
 /*
   Figma 1920×1080 기준
   vw = px ÷ 1920 × 100
@@ -443,7 +443,7 @@ img, video { display: block; width: 100%; }
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #676057;
+  background: #000000;
   overflow: hidden;
 }
 
