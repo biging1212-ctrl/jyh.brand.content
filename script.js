@@ -53,8 +53,8 @@
 })();
 
 // ── Config ──
-const TOTAL_PAGES = 80; // pages 2–81 (page 82 = closing HTML)
-const FINAL_PAGE_TOTAL = 82;
+const TOTAL_PAGES = 74; // pages 2–75 (page 76 = closing HTML)
+const FINAL_PAGE_TOTAL = 76;
 const STORAGE_KEY = 'portfolio_slots';
 
 // ── Load saved slots from localStorage ──
@@ -72,7 +72,7 @@ const section = document.getElementById('portfolio');
 const saved   = loadSaved();
 
 for (let i = 1; i <= TOTAL_PAGES; i++) {
-  const pageNum = i + 1; // pages 2–81
+  const pageNum = i + 1; // pages 2–75
   const slot    = document.createElement('div');
   slot.className   = 'portfolio-slot';
   slot.dataset.index = i;
@@ -86,8 +86,8 @@ for (let i = 1; i <= TOTAL_PAGES; i++) {
   numBadge.textContent = `${String(pageNum).padStart(2, '0')} / ${FINAL_PAGE_TOTAL}`;
   slot.appendChild(numBadge);
 
-// ── PAGE 17: YouTube Video ──
-if (pageNum === 17) {
+// ── PAGE 61: YouTube Video ──
+if (pageNum === 61) {
   slot.classList.add('youtube-page');
 
   const videoWrap = document.createElement('div');
