@@ -53,15 +53,15 @@
 })();
 
 // ── Config ──
-const TOTAL_PAGES = 55; // pages 2–56 (page 57 = closing HTML)
-const FINAL_PAGE_TOTAL = 57;
+const TOTAL_PAGES = 49; // pages 2–50 (page 51 = closing HTML)
+const FINAL_PAGE_TOTAL = 51;
 const STORAGE_KEY = 'portfolio_slots';
 
 const VIDEO_PAGES = new Set([
-  5, 7, 11, 13, 17, 21,
-  24, 25, 30, 31, 32, 33,
-  34, 37, 38, 39,
-  46, 47, 51
+  5, 6, 7, 12, 14, 18, 19,
+  20, 24, 28, 31, 32, 34,
+  37, 38, 40, 42,
+  45, 46, 50
 ]);
 
 // ── Load saved slots from localStorage ──
@@ -374,8 +374,8 @@ function addProjectIndex(slot) {
   const projects = [
     {
       num: '01',
-      title: '삼쩜삼',
-      desc: 'Pop-up store',
+      title: 'ORION',
+      desc: 'Sns Content',
       image: 'assets/images/project-01.png',
       target: '#page-03',
       imgX: 220,
@@ -383,37 +383,37 @@ function addProjectIndex(slot) {
     },
     {
       num: '02',
-      title: 'BPT',
-      desc: 'Rebranding',
+      title: '삼쩜삼',
+      desc: 'Pop-up store',
       image: 'assets/images/project-02.png',
-      target: '#page-14',
+      target: '#page-10',
       imgX: 542,
       textX: 542
     },
     {
       num: '03',
-      title: '푸본현대생명',
-      desc: 'Sns Content',
+      title: 'BPT',
+      desc: 'Rebranding',
       image: 'assets/images/project-03.png',
-      target: '#page-26',
+      target: '#page-21',
       imgX: 864,
       textX: 864
     },
     {
       num: '04',
-      title: 'ORION',
-      desc: 'Sns Content',
+      title: '빙그레',
+      desc: 'Pop-up store',
       image: 'assets/images/project-04.png',
-      target: '#page-35',
+      target: '#page-33',
       imgX: 1186,
       textX: 1186
     },
     {
       num: '05',
-      title: 'DAYMINE',
-      desc: 'Branding / Product',
+      title: '한국소방안전원',
+      desc: 'Campaign',
       image: 'assets/images/project-05.png',
-      target: '#page-42',
+      target: '#page-44',
       imgX: 1508,
       textX: 1508
     }
