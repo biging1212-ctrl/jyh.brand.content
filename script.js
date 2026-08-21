@@ -84,7 +84,7 @@ const STORAGE_KEY = 'portfolio_slots';
 const VIDEO_PAGES = new Set([
   4, 6, 10, 12, 17, 18, 19,
   23, 25, 29, 31, 36,
-  37, 44, 51, 52,
+  37, 44, 48, 51, 52,
 ]);
 
 // ── Load saved slots from localStorage ──
