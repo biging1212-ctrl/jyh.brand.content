@@ -82,7 +82,7 @@ const FINAL_PAGE_TOTAL = 53;
 const STORAGE_KEY = 'portfolio_slots';
 
 const VIDEO_PAGES = new Set([
-  4, 6, 10, 12, 17, 18, 199
+  4, 6, 10, 12, 17, 18, 19,
   23, 25, 29, 31, 36,
   37, 44, 51, 52,
 ]);
@@ -102,7 +102,7 @@ const section = document.getElementById('portfolio');
 const saved   = loadSaved();
 
 for (let i = 1; i <= TOTAL_PAGES; i++) {
-  const pageNum = i + 1; // pages 2–56
+  const pageNum = i + 1; // pages 2–52
   const slot    = document.createElement('div');
   slot.className   = 'portfolio-slot';
   slot.dataset.index = i;
