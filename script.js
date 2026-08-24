@@ -492,7 +492,7 @@ function addProjectIndex(slot) {
     {
       num: '(05)',
       title: 'BPT',
-      desc: 'Rebranding / 실무',
+      desc: 'Beverage Branding',
       image: 'assets/images/project-05.png',
       target: '#page-41',
 
