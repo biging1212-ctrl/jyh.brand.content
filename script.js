@@ -407,7 +407,7 @@ function addProjectIndex(slot) {
     {
       num: '(01)',
       title: 'KIMCHI SAUCE',
-      desc: 'Beverage Branding',
+      desc: 'Retail Redisign',
       image: 'assets/images/project-01.png',
       target: '#page-03',
 
