@@ -407,7 +407,7 @@ function addProjectIndex(slot) {
     {
       num: '(01)',
       title: 'KIMCHI SAUCE',
-      desc: 'Retail Redisign',
+      desc: 'Retail Redesign',
       image: 'assets/images/project-01.png',
       target: '#page-03',
 
