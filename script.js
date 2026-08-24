@@ -77,14 +77,14 @@
 })();
 
 // ── Config ──
-const TOTAL_PAGES = 51; // pages 2–52 (page 53 = closing HTML)
-const FINAL_PAGE_TOTAL = 53;
+const TOTAL_PAGES = 57; // pages 2–58 (page 59 = closing HTML)
+const FINAL_PAGE_TOTAL = 59;
 const STORAGE_KEY = 'portfolio_slots';
 
 const VIDEO_PAGES = new Set([
   4, 6, 10, 12, 17, 18, 19,
   23, 25, 29, 31, 36,
-  37, 44, 48, 51, 52,
+  37, 42, 47, 57
 ]);
 
 // ── Load saved slots from localStorage ──
@@ -125,6 +125,33 @@ if (pageNum === 2) {
   addProjectIndex(slot);
 
   section.appendChild(slot);
+  continue;
+}
+
+    // ── PAGE 55: YouTube Video ──
+if (pageNum === 55) {
+  slot.classList.add('youtube-page');
+
+  const videoWrap = document.createElement('div');
+  videoWrap.className = 'youtube-video-wrap';
+
+  const iframe = document.createElement('iframe');
+
+  iframe.src =
+    'https://www.youtube-nocookie.com/embed/9JKTAvEiiZU?rel=0&playsinline=1';
+
+  iframe.title = 'Portfolio YouTube Video';
+
+  iframe.allow =
+    'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+
+  iframe.allowFullscreen = true;
+
+  videoWrap.appendChild(iframe);
+  slot.appendChild(videoWrap);
+
+  section.appendChild(slot);
+
   continue;
 }
   
