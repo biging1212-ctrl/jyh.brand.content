@@ -128,8 +128,8 @@ if (pageNum === 2) {
   continue;
 }
 
-    // ── PAGE 55: YouTube Video ──
-if (pageNum === 55) {
+    // ── PAGE 17: YouTube Video ──
+if (pageNum === 17) {
   slot.classList.add('youtube-page');
 
   const videoWrap = document.createElement('div');
@@ -406,109 +406,108 @@ function addProjectIndex(slot) {
   const projects = [
     {
       num: '(01)',
-      title: 'KIMCHI SAUCE',
-      desc: 'Retail Redesign',
+      title: 'WINKLE',
+      desc: 'Beverage Branding',
       image: 'assets/images/project-01.png',
       target: '#page-03',
 
       imgX: 200,
-      imgY: 401,
-      imgW: 249,
-      imgH: 263,
+      imgY: 474,
+      imgW: 200,
+      imgH: 283,
 
-      numY: 366,
+      numY: 439,
 
-      titleY: 686,
+      titleY: 777,
 
-      descY: 710
+      descY: 798
     },
 
     {
       num: '(02)',
-      title: 'ORION',
-      desc: 'Promotion Contents / 실무',
+      title: 'KIMCHI SAUCE',
+      desc: 'Product Retail Redesign',
       image: 'assets/images/project-02.png',
-      target: '#page-15',
+      target: '#page-21',
 
-      imgX: 519,
-      imgY: 401,
-      imgW: 249,
-      imgH: 405,
+      imgX: 466,
+      imgY: 474,
+      imgW: 200,
+      imgH: 180,
 
-      numX: 626,
-      numY: 366,
-
-      titleX: 605,
-      titleY: 828,
-
-      descX: 569,
-      descY: 852
+      numY: 439,
+      titleY: 674,
+      descY: 695
     },
 
     {
       num: '(03)',
-      title: '3.3',
-      desc: 'Pop - Up Store / 실무',
+      title: 'LOTTE CHILLSUNG',
+      desc: 'Sns Content / 실무',
       image: 'assets/images/project-03.png',
-      target: '#page-21',
+      target: '#page-33',
 
-      imgX: 836,
-      imgY: 401,
-      imgW: 249,
-      imgH: 263,
+      imgX: 732,
+      imgY: 474,
+      imgW: 200,
+      imgH: 354,
 
-      numX: 944,
-      numY: 366,
-
-      titleX: 949,
-      titleY: 686,
-
-      descX: 911,
-      descY: 710
+      numY: 439,
+      titleY: 848,
+      descY: 869
     },
 
     {
       num: '(04)',
-      title: 'BINGGRAE',
-      desc: 'Pop - Up Store / 실무',
+      title: 'ORION',
+      desc: 'Promotion Content / 실무',
       image: 'assets/images/project-04.png',
-      target: '#page-30',
+      target: '#page-40',
 
-      imgX: 1155,
-      imgY: 401,
-      imgW: 249,
-      imgH: 348,
+      imgX: 998,
+      imgY: 474,
+      imgW: 200,
+      imgH: 180,
 
-      numX: 1262,
-      numY: 366,
+      numY: 439,
 
-      titleX: 1251,
-      titleY: 771,
+      titleY: 674,
 
-      descX: 1208,
-      descY: 795
+      descY: 695
     },
 
     {
       num: '(05)',
-      title: 'BPT',
-      desc: 'Beverage Branding',
+      title: 'BINGGRAE',
+      desc: 'Pop - Up Store / 실무',
       image: 'assets/images/project-05.png',
-      target: '#page-41',
+      target: '#page-46',
 
-      imgX: 1472,
-      imgY: 401,
-      imgW: 249,
-      imgH: 263,
+      imgX: 1264,
+      imgY: 474,
+      imgW: 200,
+      imgH: 283,
 
-      numX: 1579,
-      numY: 366,
+      numY: 439,
+      titleY: 777,
+      descY: 798
+    },
 
-      titleX: 1552,
-      titleY: 686,
+    {
+      num: '(06)',
+      title: '3.3',
+      desc: 'Pop - Up Store / 실무',
+      image: 'assets/images/project-05.png',
+      target: '#page-57',
 
-      descX: 1546,
-      descY: 710
+      imgX: 1530,
+      imgY: 474,
+      imgW: 200,
+      imgH: 180,
+
+      numY: 439,
+      titleY: 674,
+      descY: 695
     }
   ];
 
@@ -530,8 +529,7 @@ function addProjectIndex(slot) {
     <!-- 연락처 -->
     <div class="page02-contact">010.4079.5374 / biging1212@gmail.com</div>
     <div class="page02-guide">
-    *이미지 선택 시,<br>
-    해당 프로젝트로 이동 가능합니다.
+    *이미지 선택 시, 해당 프로젝트로 이동 가능합니다.
   </div>
   `;
 
