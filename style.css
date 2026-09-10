@@ -867,8 +867,14 @@ img, video { display: block; width: 100%; }
 
 /* 번호 */
 .page02-num {
-  top: 67.5926%; /* y: 730 */
   color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* 바로 다음 이미지에 마우스를 올리면 해당 번호 표시 */
+.page02-num:has(+ .page02-thumb:hover) {
+  opacity: 1;
 }
 
 /* 프로젝트명 */
