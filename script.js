@@ -78,7 +78,7 @@
 
 // ── Config ──
 const TOTAL_PAGES = 64; // pages 2–65 (page 66 = closing HTML)
-const FINAL_PAGE_TOTAL = ;66
+const FINAL_PAGE_TOTAL = 66;
 const STORAGE_KEY = 'portfolio_slots';
 
 const VIDEO_PAGES = new Set([
@@ -497,7 +497,7 @@ function addProjectIndex(slot) {
       num: '(06)',
       title: '3.3',
       desc: 'Pop - Up Store / 실무',
-      image: 'assets/images/project-05.png',
+      image: 'assets/images/project-06.png',
       target: '#page-57',
 
       imgX: 1530,
