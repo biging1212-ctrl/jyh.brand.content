@@ -90,7 +90,7 @@ const VIDEO_PAGES = new Set([
 const PROJECT_START_META = {
 
   3: {
-    category: 'PACKAGE PROJECT',
+    category: 'BRAND RETAI PROJECT',
     title: 'BIBIGO KIMCHI SAUCE',
     period: '2026.01',
     scope: 'Personal Study, 100%',
@@ -98,17 +98,8 @@ const PROJECT_START_META = {
     theme: 'light'
   },
 
-  20: {
-    category: 'BRAND PACKAGE PROJECT',
-    title: 'OATERY',
-    period: '2026.07',
-    scope: 'Personal Study, 100%',
-    tool: 'Figma, Illustrator, Photoshop,<br>C4D, Gpt, Higgsfield AI',
-    theme: 'light'
-  },
-
-  35: {
-    category: 'BRAND PACKAGE PROJECT',
+  19: {
+    category: 'BRANDING PROJECT',
     title: 'WINKLE 윙클',
     period: '2023, 2025',
     scope: 'Personal Study, 100%',
@@ -116,7 +107,16 @@ const PROJECT_START_META = {
     theme: 'light'
   },
 
-  52: {
+  36: {
+    category: 'POP-UP / CONTENT PROJECT',
+    title: '빙그레 소원왕국',
+    period: '2024.12 - 2025.01<br>2024.05 - 2024.07 (content)',
+    scope: 'Created at Bigpictureteam,<br>Personal Scope 70%',
+    tool: 'Figma, Illustrator, Photoshop,<br>After Effects',
+    theme: 'dark'
+  },  
+
+  48: {
     category: 'CONTENT PROJECT',
     title: 'ORION 오리온',
     period: '2025.01 - 2025.08',
@@ -125,12 +125,12 @@ const PROJECT_START_META = {
     theme: 'light'
   },
 
-  58: {
-    category: 'POP-UP PROJECT',
-    title: '삼쩜삼 모두의 연말정산',
-    period: '2024.10 - 2024.12',
-    scope: 'Created at Bigpictureteam,<br>Personal Scope 70%',
-    tool: 'Figma, Illustrator, Photoshop,<br>After Effects',
+  54: {
+    category: 'CONTENT PROJECT',
+    title: 'LOTTE CHILSUNG (크러시, 처음처럼)',
+    period: '2024.08 - 2025.04',
+    scope: 'Created at Bigpictureteam,<br>Personal Scope 100%',
+    tool: 'Figma, Illustrator, Photoshop',
     theme: 'dark'
   },
 
@@ -147,75 +147,128 @@ const PROJECT_START_META = {
 
 // ── Page Section Text Meta ──
 const PAGE_SECTION_META = {
-
-  14: {
-    title: 'OFFLINE POP-UP',
-    body: '브랜드 경험을 온라인에서 오프라인으로 확장하기 위한 팝업 다이닝 클럽을 기획했습니다. 나초, 피자, 누들 등 글로벌 소비자에게 친숙한 메뉴에 김치소스를 접목한 다이닝 경험을 제공하고, 이번 비비고 소스 제품의 블랙&레드 비주얼 아이덴티티를 공간 전체에 적용해 제품 세계관을 입체적으로 전달했습니다.',
-    theme: 'dark'
-  },
-
   4: {
     title: 'PROJECT BACKGROUND',
     body: '비비고의 해외 수출용 제품군에서 대용량 김치 소스가 업장용으로 유통되고 있다는 점에 주목했습니다. 김치의 풍미를 간편하게 구현할 수 있는 소스라면 외식업뿐 아니라 해외 가정의 일상적인 식탁에서도 충분히 활용될 수 있다고 판단해 프로젝트를 시작했습니다. 기존의 김치 요리 전용 소스를 넘어 볶고·뿌리고·찍어 먹으며 다양한 음식에 한국의 맛을 더하는 만능 K-소스로 용도와 소비 장면을 재정의했습니다.',
     theme: 'dark'
   },
-
-  21: {
-    title: 'BRAND BACKGROUND',
-    body: '건강을 위해 선택하는 음식도, 우리가 평소 즐겨 먹는 한 끼처럼 맛있을 수 없을까? 오터리는 다이어트 식품을 일상식처럼 맛있게 만들어 먹는 즐거움에서 시작되었습니다. 오트의 담백함에 리조또의 풍미를 더하고, 때로는 달콤한 디저트로 변주하며 오트가 가진 식사의 가능성을 넓혀갑니다. 특별한 장소나 정해진 시간이 아니어도 괜찮습니다. 바쁜 출근길, 사무실 책상 앞, 집에서 보내는 여유로운 순간까지. 오트를 즐기는 곳이라면 어디든 나만의 작은 이터리가 됩니다.',
-    theme: 'light'
+  
+  7: {
+    title: 'LOGO TYPE',
+    body: '',
+    theme: 'dark'
   },
 
-  25: {
-    title: 'COLOR SYSTEM',
-    body: '오터리는 건강식의 정형화된 컬러에서 벗어나, 일상 속 다양한 식사의 즐거움을 선명하고 다채로운 컬러로 표현합니다. 오터리는 제품의 맛과 특성에 따라 메인 컬러를 유연하게 적용하고, 브랜드 공통 컬러인 브라운과 크림을 조합하여 일관된 아이덴티티를 유지합니다. 선명한 컬러의 대비와 조화를 통해 제품별 개성을 직관적으로 전달하며, 패키지부터 그래픽과 디지털 콘텐츠까지 확장 가능한 컬러 시스템을 구축합니다.',
-    theme: 'light'
+  8: {
+    title: 'DESIGN SYSTEM',
+    body: '',
+    theme: 'dark'
   },
 
-  36: {
+  10: {
+    title: 'PACKAGE DESIGN',
+    body: '',
+    theme: 'dark'
+  },
+  
+  13: {
+    title: 'OFFLINE POP-UP',
+    body: '브랜드 경험을 온라인에서 오프라인으로 확장하기 위한 팝업 다이닝 클럽을 기획했습니다. 나초, 피자, 누들 등 글로벌 소비자에게 친숙한 메뉴에 김치소스를 접목한 다이닝 경험을 제공하고, 이번 비비고 소스 제품의 블랙&레드 비주얼 아이덴티티를 공간 전체에 적용해 제품 세계관을 입체적으로 전달했습니다.',
+    theme: 'dark'
+  },
+  
+  20: {
     title: 'BRAND BACKGROUND',
     body: '제로 음료가 일상적인 선택으로 자리 잡았지만, 소비자에게는 여전히 몇 가지 망설임이 남아 있습니다. 감미료에 대한 불안과 채소를 활용한 음료는 맛이 없을 것이라는 편견을 갖기 쉽습니다. 여기에 건강과 체중 관리를 위해 끊임없이 선택을 통제해야 하는 피로감까지 더해지며, 제로 음료가 즐거움보다 관리의 수단으로 받아들여지기도 합니다. 이에 건강함을 강조하기보다 맛과 기분을 먼저 생각하며 편안하게 선택할 수 있는 새로운 음료 경험이 필요했습니다.',
     theme: 'light'
   },
 
-  38: {
+  22: {
   title: 'BRAND ESSENCE',
   body: '',
   theme: 'light'
   },
   
-  39: {
+  23: {
     title: 'BRAND CORE VALUE',
     body: '건강을 의식하는 선택이 절대 부담으로 느껴지지 않도록, 밝은 에너지와 가벼운 선택, 유쾌한 즐거움을 핵심 가치로 설정했습니다. 과일과 채소가 주는 산뜻한 이미지와 제로 음료의 부담 없는 특성을 바탕으로, 일상에서 편하게 고르고 기분 좋게 즐길 수 있는 브랜드 경험을 만들고자 했습니다.',
     theme: 'light'
   },
 
-  42: {
+  24: {
+    title: 'BRAND LOGO',
+    body: '',
+    theme: 'light'
+  },  
+
+  25: {
+    title: 'COLOR SYSTEM',
+    body: '',
+    theme: 'light'
+  },    
+
+  26: {
     title: 'GRAPHIC MOTIF & TYPEFACE',
     body: 'Winkle의 그래픽 모티프는 브랜드명에서 착안한 별을 중심으로, 비눗방울과 폭죽처럼 즐거운 순간을 떠올리게 하는 요소를 결합했습니다. 이를 하프톤 스타일로 표현해 경쾌한 에너지와 유쾌한 브랜드 무드를 시각화했습니다.',
     theme: 'light'
   },
 
-  43: {
+  27: {
   title: 'PRODUCT DESIGN',
   body: '컬러팝 오렌지와 강한 타이포그래피를 활용해 과채 음료를 밝고 자극적인 탄산 이미지로 전환했습니다. 로고와 플레이버명을 크게 배치해 진열 환경에서도 제품의 개성과 맛이 빠르게 인지되도록 했으며, 하단의 블랙 정보 바를 통해 제로 스파클링과 용량 등 핵심 정보를 명확하게 구분했습니다.',
   theme: 'light'
   },
 
-  46: {
+  30: {
     title: 'BRAND CHARACTER IP',
     body: 'Winkle Crew는 걱정을 내려놓고 현재의 즐거움을 발견해가는 과정을 세 캐릭터의 관계로 풀어낸 브랜드 IP입니다. 서로 다른 감정과 성격을 지닌 세 캐릭터가 만나 고민을 공감하고 긍정적인 방향으로 나아가며, Winkle이 전하고자 하는 자유로움과 즐거움, 밝은 에너지를 하나의 이야기로 전달합니다. 개성 있는 캐릭터를 통해 제품의 메시지를 친근하게 전달하고, 패키지와 콘텐츠, 게임형 경험으로 확장할 수 있도록 기획했습니다.',
     theme: 'light'
   },
+  
+  33: {
+    title: 'APPLICATION',
+    body: '',
+    theme: 'light'
+  },    
 
-  53: {
+  37: {
+    title: 'PROJECT MISSION',
+    body: '빙그레가 가진 높은 브랜드 인지도와 친근한 캐릭터 IP를 바탕으로, 방문객이 제품과 브랜드 세계관을 직접 경험할 수 있는 팝업스토어를 기획했습니다. ‘빙그레 소원왕국’이라는 콘셉트 아래 별, 밤하늘, 성, 기차 등의 판타지 요소를 활용해 브랜드의 긍정적이고 유쾌한 이미지를 공간 경험으로 확장하고자 했습니다.',
+    theme: 'light'
+  },  
+
+  38: {
+    title: 'KEY CONCEPT',
+    body: '‘빙그레 소원왕국’은 브랜드의 캐릭터와 제품 세계관을 하나의 판타지 공간으로 확장한 프로젝트입니다. 브랜드의 친근한 캐릭터성과 판타지 무드를 결합하였고 별빛이 가득한 밤하늘과 성, 기차, 소원이라는 판타지적인 비주얼을 활용해 동화 같은 세계관을 시각적으로 표현했습니다.',
+    theme: 'light'
+  },  
+  
+  39: {
+    title: 'SPACE DESIGN',
+    body: '',
+    theme: 'light'
+  },  
+  
+  42: {
+  title: 'EVENT COLLATERAL',
+  body: '팝업 현장에서 방문객이 마주하는 팜플렛, 사인물, 포토부스 프레임 등 다양한 현장 그래픽을 제작했습니다. 소원왕국의 컬러와 캐릭터 모티프를 일관되게 적용해 브랜드 세계관을 유지하면서, 이벤트 참여와 굿즈 정보가 직관적으로 전달되도록 구성했습니다.',
+  theme: 'light'
+  },
+  
+  45: {
+  title: 'CHARACTER MODELING',
+  body: '',
+  theme: 'dark'
+  },
+  
+  49: {
     title: 'PROJECT OVERVIEW',
     body: '오리온 공식 SNS 콘텐츠 제작 프로젝트로, 신제품 출시와 브랜드 이벤트, 시즌 이슈를 소비자에게 쉽고 재미있게 전달하는 것을 목표로 했습니다. 제품의 맛과 특징이 한눈에 보이도록 강한 컬러감과 직관적인 제품 비주얼을 활용했으며, 오리온의 다양한 제품을 일상 속에서 즐기고 공유할 수 있는 친근한 브랜드 경험으로 확장했습니다.',
     theme: 'light',
     accent: '#E60012'
   },
 
-  54: {
+  50: {
   title: 'TYPE 01',
   subtitle: '신상선발대 / 크루 모집',
   body: '',
@@ -223,7 +276,7 @@ const PAGE_SECTION_META = {
   accent: '#E60012'
   },
 
-55: {
+  51: {
   title: 'TYPE 02',
   subtitle: '소비자 참여를 만드는 반응형 콘텐츠',
   body: '',
@@ -231,15 +284,15 @@ const PAGE_SECTION_META = {
   accent: '#E60012'
   },
 
-56: {
+  52: {
   title: 'TYPE 03',
   subtitle: '시즌 이슈와 브랜드를 연결하는 콘텐츠',
   body: '',
   theme: 'light',
   accent: '#E60012'
   },
-
-57: {
+ 
+  53: {
   title: 'TYPE 04',
   subtitle: '신제품을 빠르게 전달하는 콘텐츠',
   body: '',
@@ -247,25 +300,16 @@ const PAGE_SECTION_META = {
   accent: '#E60012'
   },
 
-  59: {
-    title: 'PROJECT OVERVIEW',
-    body: '‘모두의 연말정산’은 어렵고 딱딱하게 느껴질 수 있는 연말정산을 2030 세대가 자신의 한 해를 돌아보고 기록하는 경험으로 풀어낸 삼쩜삼의 팝업스토어입니다. 세금이라는 소재를 보다 친근하게 경험하며 브랜드의 공감과 친밀감을 느낄 수 있도록 기획되었습니다. 초기 아이데이션에 참여해 제안한 콘셉트 스토리가 프로젝트의 주 방향으로 채택되었으며, 이를 바탕으로 키비주얼부터 굿즈, 현장 그래픽을 담당했습니다.',
-    theme: 'light',
-    accent: '#0862F5'
+  55: {
+  title: 'CRUSH ON KRUSH',
+  body: '새롭게 등장한 크러시가 경쟁이 치열한 맥주 시장에서 젊은 소비자에게 빠르게 인지되고, 차별화된 브랜드 이미지를 구축할 수 있도록 SNS 커뮤니케이션을 기획했습니다. 크러시의 강렬한 컬러와 젊은 이미지를 바탕으로 게임, 챌린지, 인터랙션 요소를 결합해 소비자의 반응과 참여를 유도하는 콘텐츠를 제작했습니다.',
+  theme: 'dark'
   },
 
-  60: {
-    title: 'DESIGN CONCEPT',
-    body: '연말이라는 시점을 떠올렸을 때, 선물을 주고받았던 특별한 순간, 사진처럼 남아 있는 추억, 무심히 흘러갔지만 결국 하루하루 쌓인 일상, 그리고 그 안에서 더욱 선명해지는 소중한 기억들을 먼저 떠올렸습니다. 이러한 연말의 감정과 장면들을 바탕으로 특별함, 추억, 일상, 소중함의 키워드를 도출했고, 이를 직관적인 오브제로 시각화해 팝업의 전체 디자인 컨셉으로 정했습니다.',
-    theme: 'light',
-    accent: '#0862F5'
-  },
-
-  63: {
-    title: 'GOODS',
-    body: '한 해를 돌아보고 기록할 수 있도록, 다이어리 스티커·질문 미니북·포토부스 프레임·현장 참여물 등 기록 중심의 굿즈를 제작했습니다. 키비주얼 그래픽과 컬러 무드를 활용하여 따뜻한 분위기와 참여 경험이 함께 전달되도록 디자인했습니다.',
-    theme: 'light',
-    accent: '#0862F5'
+  58: {
+  title: 'AGAIN 처음처럼',
+  body: '처음처럼의 축적된 브랜드 자산을 현재 소비자 감성에 맞게 재해석한 인스타그램 콘텐츠 작업입니다. ‘Again 처음처럼’ 컨셉을 바탕으로 친근함과 추억의 이미지를 일상 공감형 콘텐츠로 확장하고, 소비자와 다시 연결되는 브랜드 커뮤니케이션을 제안했습니다.',
+  theme: 'dark'
   },
 
   68: {
@@ -284,69 +328,6 @@ const PAGE_SECTION_META = {
     title: 'IDENTITY GRAPHIC',
     body: '브랜드 아이콘과 그래픽 에셋은 메시지를 직관적으로 전달하고, 일관된 브랜드 이미지를 형성하는 핵심 시각 언어입니다. 로고 심볼의 기본 조형(B, P, T)를 확장하여 다양한 카테고리를 상징하는 그래픽으로 표현했습니다. 카테고리의 표현뿐만 아니라 다양한 인터렉션 요소로 확장할 수 있습니다.',
     theme: 'light'
-  },
-
-  7: {
-    title: 'LOGO TYPE',
-    body: '',
-    theme: 'dark'
-  },
-
-  8: {
-    title: 'DESIGN SYSTEM',
-    body: '',
-    theme: 'dark'
-  },
-
-  10: {
-    title: 'PACKAGE DESIGN',
-    body: '',
-    theme: 'dark'
-  },
-
-  23: {
-    title: 'LOGO TYPEFACE',
-    body: '',
-    theme: 'light'
-  },
-
-  28: {
-    title: 'PACKAGE STRUCTURE',
-    body: '',
-    theme: 'light'
-  },
-
-  40: {
-    title: 'BRAND LOGO',
-    body: '',
-    theme: 'light'
-  },
-
-  41: {
-    title: 'COLOR SYSTEM',
-    body: '',
-    theme: 'light'
-  },
-
-  49: {
-    title: 'APPLICATION',
-    body: '',
-    theme: 'light'
-  },
-
-  64: {
-    title: 'EVENT STILL',
-    body: '',
-    theme: 'light',
-    accent: '#0862F5',
-    top: '63.6111%'
-  },
-
-  66: {
-    title: 'DISPLAY ADVERTISING',
-    body: '',
-    theme: 'light',
-    accent: '#0862F5'
   },
 
   74: {
@@ -1001,17 +982,17 @@ if (pageNum === 19) {
   continue;
 }
 
-  // ── PAGE 31: 2 IMAGE SLIDESHOW ──
-if (pageNum === 31) {
+  // ── PAGE 12: 2 IMAGE SLIDESHOW ──
+if (pageNum === 12) {
 
-  slot.classList.add('page31-slideshow-page');
+  slot.classList.add('page12-slideshow-page');
 
   const slideshow = document.createElement('div');
-  slideshow.className = 'page31-slideshow';
+  slideshow.className = 'page12-slideshow';
 
   const slideImages = [
-    'assets/images/page-31-01.png',
-    'assets/images/page-31-02.png'
+    'assets/images/page-12-01.png',
+    'assets/images/page-12-02.png'
   ];
 
   slideImages.forEach((src, index) => {
@@ -1020,7 +1001,7 @@ if (pageNum === 31) {
 
     img.src = src;
     img.alt = '';
-    img.className = 'page31-slide';
+    img.className = 'page12-slide';
 
     if (index === 0) {
       img.classList.add('is-active');
@@ -1032,7 +1013,7 @@ if (pageNum === 31) {
   slot.appendChild(slideshow);
   section.appendChild(slot);
 
-  const slides = slideshow.querySelectorAll('.page31-slide');
+  const slides = slideshow.querySelectorAll('.page12-slide');
 
   let currentSlide = 0;
 
@@ -1048,15 +1029,6 @@ if (pageNum === 31) {
 
   continue;
 }
-
-  // ── PAGE 33: OATERY CARD MOTION ──
-if (pageNum === 33) {
-
-  slot.classList.add('page33-motion-page');
-
-  const stage = document.createElement('div');
-  stage.className = 'page33-stage';
-
 
   // ── Figma 기준값 : 1920 × 1080 ──
   const FIGMA_W = 1920;
@@ -1206,8 +1178,8 @@ if (pageNum === 33) {
   continue;
 }
   
-  // ── PAGE 48: YouTube Video ──
-if (pageNum === 48) {
+  // ── PAGE 32: YouTube Video ──
+if (pageNum === 32) {
   slot.classList.add('youtube-page');
 
   const videoWrap = document.createElement('div');
