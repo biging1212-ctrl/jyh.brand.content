@@ -673,49 +673,49 @@ if (pageNum === 10) {
 }
 
   
-// ── PAGE 15: RANDOM PHOTO COLLAGE ──
-if (pageNum === 15) {
+// ── PAGE 14: RANDOM PHOTO COLLAGE ──
+if (pageNum === 14) {
 
-  slot.classList.add('page15-collage-page');
+  slot.classList.add('page14-collage-page');
 
   const collage = document.createElement('div');
-  collage.className = 'page15-collage';
+  collage.className = 'page14-collage';
 
 
   const photos = [
 
     {
-      src: 'assets/images/page-15-01.png',
+      src: 'assets/images/page-14-01.png',
       className: 'photo-01'
     },
 
     {
-      src: 'assets/images/page-15-02.png',
+      src: 'assets/images/page-14-02.png',
       className: 'photo-02'
     },
 
     {
-      src: 'assets/images/page-15-03.png',
+      src: 'assets/images/page-14-03.png',
       className: 'photo-03'
     },
 
     {
-      src: 'assets/images/page-15-04.png',
+      src: 'assets/images/page-14-04.png',
       className: 'photo-04'
     },
 
     {
-      src: 'assets/images/page-15-05.png',
+      src: 'assets/images/page-14-05.png',
       className: 'photo-05'
     },
 
     {
-      src: 'assets/images/page-15-06.png',
+      src: 'assets/images/page-14-06.png',
       className: 'photo-06'
     },
 
     {
-      src: 'assets/images/page-15-07.png',
+      src: 'assets/images/page-14-07.png',
       className: 'photo-07'
     }
 
@@ -734,7 +734,7 @@ if (pageNum === 15) {
     img.alt = '';
 
     img.className =
-      `page15-photo ${photo.className}`;
+      `page14-photo ${photo.className}`;
 
     collage.appendChild(img);
 
@@ -982,7 +982,7 @@ if (pageNum === 19) {
   continue;
 }
 
-  // ── PAGE 12: 2 IMAGE SLIDESHOW ──
+  // ── PAGE-12: 2 IMAGE SLIDESHOW ──
 if (pageNum === 12) {
 
   slot.classList.add('page12-slideshow-page');
