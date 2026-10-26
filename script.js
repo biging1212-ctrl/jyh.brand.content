@@ -246,19 +246,19 @@ const PAGE_SECTION_META = {
   39: {
     title: 'SPACE DESIGN',
     body: '',
-    theme: 'light'
+    theme: 'dark'
   },  
   
   42: {
   title: 'EVENT COLLATERAL',
   body: '팝업 현장에서 방문객이 마주하는 팜플렛, 사인물, 포토부스 프레임 등 다양한 현장 그래픽을 제작했습니다. 소원왕국의 컬러와 캐릭터 모티프를 일관되게 적용해 브랜드 세계관을 유지하면서, 이벤트 참여와 굿즈 정보가 직관적으로 전달되도록 구성했습니다.',
-  theme: 'light'
+  theme: 'dark'
   },
   
   45: {
   title: 'CHARACTER MODELING',
   body: '',
-  theme: 'dark'
+  theme: 'light'
   },
   
   49: {
@@ -303,7 +303,7 @@ const PAGE_SECTION_META = {
   55: {
   title: 'CRUSH ON KRUSH',
   body: '새롭게 등장한 크러시가 경쟁이 치열한 맥주 시장에서 젊은 소비자에게 빠르게 인지되고, 차별화된 브랜드 이미지를 구축할 수 있도록 SNS 커뮤니케이션을 기획했습니다. 크러시의 강렬한 컬러와 젊은 이미지를 바탕으로 게임, 챌린지, 인터랙션 요소를 결합해 소비자의 반응과 참여를 유도하는 콘텐츠를 제작했습니다.',
-  theme: 'dark'
+  theme: 'light'
   },
 
   58: {
