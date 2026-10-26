@@ -555,10 +555,10 @@ img, video { display: block; width: 100%; }
 
 
 /* ─────────────────────────────
-   PAGE 15 : RANDOM PHOTO COLLAGE
+   PAGE 14 : RANDOM PHOTO COLLAGE
 ───────────────────────────── */
 
-.page15-collage-page {
+.page14-collage-page {
   position: relative;
 
   background: #000000;
@@ -567,7 +567,7 @@ img, video { display: block; width: 100%; }
 }
 
 
-.page15-collage {
+.page14-collage {
   position: absolute;
 
   inset: 0;
@@ -583,7 +583,7 @@ img, video { display: block; width: 100%; }
 
 /* ── PHOTO COMMON ── */
 
-.portfolio-slot .page15-photo {
+.portfolio-slot .page14-photo {
   position: absolute;
 
   display: block;
@@ -607,7 +607,7 @@ img, video { display: block; width: 100%; }
 
 /* 등장 */
 
-.portfolio-slot .page15-photo.is-visible {
+.portfolio-slot .page14-photo.is-visible {
   opacity: 1;
 
   transform:
@@ -616,7 +616,7 @@ img, video { display: block; width: 100%; }
 
 /* ── 01 : 좌측 상단 ── */
 
-.page15-photo.photo-01 {
+.page14-photo.photo-01 {
   left: 0;
   top: 0;
 
@@ -627,7 +627,7 @@ img, video { display: block; width: 100%; }
 
 /* ── 02 : 상단 중앙 왼쪽 ── */
 
-.page15-photo.photo-02 {
+.page14-photo.photo-02 {
   left: 21.5%;
   top: 0;
 
@@ -638,7 +638,7 @@ img, video { display: block; width: 100%; }
 
 /* ── 03 : 상단 중앙 오른쪽 ── */
 
-.page15-photo.photo-03 {
+.page14-photo.photo-03 {
   left: 42%;
   top: 0;
 
@@ -649,7 +649,7 @@ img, video { display: block; width: 100%; }
 
 /* ── 04 : 우측 상단 ── */
 
-.page15-photo.photo-04 {
+.page14-photo.photo-04 {
   right: 0;
   top: 0;
 
@@ -660,7 +660,7 @@ img, video { display: block; width: 100%; }
 
 /* ── 05 : 좌측 하단 ── */
 
-.page15-photo.photo-05 {
+.page14-photo.photo-05 {
   left: 0;
   bottom: 0;
 
@@ -671,7 +671,7 @@ img, video { display: block; width: 100%; }
 
 /* ── 06 : 중앙 하단 ── */
 
-.page15-photo.photo-06 {
+.page14-photo.photo-06 {
   left: 21.5%;
   bottom: 0;
 
@@ -682,7 +682,7 @@ img, video { display: block; width: 100%; }
 
 /* ── 07 : 우측 하단 ── */
 
-.page15-photo.photo-07 {
+.page14-photo.photo-07 {
   right: 0;
   bottom: 0;
 
@@ -691,15 +691,15 @@ img, video { display: block; width: 100%; }
 }
 
 
-/* ── PAGE 19 : 4 IMAGE SLIDESHOW ── */
+/* ── PAGE 17 : 4 IMAGE SLIDESHOW ── */
 
-.page19-slideshow-page {
+.page17-slideshow-page {
   position: relative;
   background: #000000;
 }
 
 
-.page19-slideshow {
+.page17-slideshow {
   position: absolute;
   inset: 0;
 
@@ -712,7 +712,7 @@ img, video { display: block; width: 100%; }
 
 /* 모든 슬라이드 */
 
-.portfolio-slot .page19-slide {
+.portfolio-slot .page17-slide {
   position: absolute;
 
   inset: 0;
@@ -737,20 +737,20 @@ img, video { display: block; width: 100%; }
 
 /* 현재 표시되는 슬라이드 */
 
-.portfolio-slot .page19-slide.is-active {
+.portfolio-slot .page17-slide.is-active {
   opacity: 1;
 
   z-index: 2;
 }
 
-/* ── PAGE 31 : 2 IMAGE SLIDESHOW ── */
+/* ── PAGE 12 : 2 IMAGE SLIDESHOW ── */
 
-.page31-slideshow-page {
+.page12-slideshow-page {
   position: relative;
   background: #000000;
 }
 
-.page31-slideshow {
+.page12-slideshow {
   position: absolute;
   inset: 0;
 
@@ -760,7 +760,7 @@ img, video { display: block; width: 100%; }
   overflow: hidden;
 }
 
-.portfolio-slot .page31-slide {
+.portfolio-slot .page12-slide {
   position: absolute;
 
   top: 0;
@@ -778,145 +778,10 @@ img, video { display: block; width: 100%; }
   display: block;
 }
 
-.portfolio-slot .page31-slide.is-active {
+.portfolio-slot .page12-slide.is-active {
   opacity: 1;
 }
 
-/* ─────────────────────────────
-   PAGE 33 : OATERY CARD MOTION
-───────────────────────────── */
-
-.page33-motion-page {
-  position: relative;
-
-  background: #EEE5DC;
-
-  overflow: hidden;
-}
-
-
-/* 전체 1920×1080 기준 무대 */
-.page33-stage {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  overflow: hidden;
-}
-
-
-/* ── CARD COMMON ── */
-
-.portfolio-slot .page33-card {
-  position: absolute;
-
-  display: block;
-
-  object-fit: contain;
-
-  pointer-events: none;
-
-  margin: 0;
-  padding: 0;
-}
-
-
-/* ── 기본 이미지 : 1 / 2 / 3 / 4 ── */
-
-.portfolio-slot .page33-card-base {
-  z-index: 1;
-
-  opacity: 1;
-}
-
-
-/* ── 모션 이미지 : 1b / 2b / 3b / 4b ── */
-
-.portfolio-slot .page33-card-motion {
-  z-index: 2;
-
-  opacity: 0;
-
-  /*
-    Figma:
-    From top / Distance 40px
-
-    이미지 높이 500px 기준:
-    40 / 500 = 8%
-  */
-  transform: translateY(-8%);
-
-  will-change: transform, opacity;
-}
-
-
-/* ─────────────────────────────
-   MOTION
-───────────────────────────── */
-
-.page33-motion-page.is-active
-.page33-card-motion {
-
-  animation:
-    page33Position
-      600ms
-      cubic-bezier(.05, .4, .5, 1)
-      1248ms
-      forwards,
-
-    page33Opacity
-      400ms
-      cubic-bezier(.5, 0, .5, 1)
-      1248ms
-      forwards;
-}
-
-
-/* Position
-   Slide in / From top / Distance 40
-*/
-
-@keyframes page33Position {
-
-  from {
-    transform: translateY(-8%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-
-}
-
-
-/* Opacity
-   Fade in / 0 → 100
-*/
-
-@keyframes page33Opacity {
-
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-
-}
-
-/* fade in when image loads */
-.portfolio-slot img {
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.portfolio-slot img.loaded {
-  opacity: 1;
-}
 
 /* ─────────────────────────────
    PROJECT START PAGE HEADER
@@ -1260,7 +1125,7 @@ img, video { display: block; width: 100%; }
 }
 
 /* ─────────────────────────────
-   PAGE 79 : CLOSING
+   PAGE 73 : CLOSING
 ───────────────────────────── */
 
 .closing-page {
