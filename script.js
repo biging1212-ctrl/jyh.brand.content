@@ -77,13 +77,13 @@
 })();
 
 // ── Config ──
-const TOTAL_PAGES = 77; // pages 2–78 (page 79 = closing HTML)
-const FINAL_PAGE_TOTAL = 79;
+const TOTAL_PAGES = 71; // pages 2–72 (page 79 = closing HTML)
+const FINAL_PAGE_TOTAL = 73;
 const STORAGE_KEY = 'portfolio_slots';
 
 const VIDEO_PAGES = new Set([
   20, 34, 39, 44, 45, 46, 47,
-  50, 51, 52, 70, 74, 77, 78
+  50, 51, 52, 64, 71, 72
 ]);
 
 // ── Project Start Page Meta ──
@@ -134,7 +134,7 @@ const PROJECT_START_META = {
     theme: 'dark'
   },
 
-  67: {
+  61: {
     category: 'REBRANDING PROJECT',
     title: 'BIGPICTURETEAM',
     period: '2024.11 - 2025.02',
@@ -312,31 +312,31 @@ const PAGE_SECTION_META = {
   theme: 'dark'
   },
 
-  68: {
+  62: {
     title: 'REBRANDING BACKGROUND',
     body: '빅픽처팀은 캐릭터 기반 콘텐츠 제작을 넘어 브랜드 아이덴티티, 디지털 콘텐츠, 공간 경험까지 업무 영역을 확장해왔습니다. 그러나 기존 아이덴티티는 친근하고 캐주얼한 인상이 강해, 확장된 업무 범위와 크리에이티브 에이전시로서의 전문성을 충분히 전달하기 어려웠습니다. 또한 긴 형태의 워드마크와 통합된 응용 기준의 부재로 인해 디지털 화면, 공간 사인, 인쇄물 등 다양한 환경에서 일관된 브랜드 인상을 구축하는 데 한계가 있었습니다.',
     theme: 'dark'
   },
 
-  69: {
+  63: {
     title: 'DESIGN DIRECTION',
     body: '브랜드가 가진 창의적이고 대담한 태도는 유지하면서, 성장한 조직의 전문성과 신뢰감을 함께 전달하는 방향으로 리브랜딩을 진행했습니다. 긴 사명을 중심으로 한 기존 로고에서 벗어나 BPT 이니셜을 핵심 브랜드 자산으로 설정해 인지성과 활용성을 높였습니다. 또한 평면적인 표현에 한정되지 않고, 디지털 콘텐츠와 공간 환경까지 유연하게 확장할 수 있도록 입체감과 움직임을 새로운 시각 언어로 도입했습니다.',
     theme: 'dark'
   },
 
-  72: {
+  66: {
     title: 'IDENTITY GRAPHIC',
     body: '브랜드 아이콘과 그래픽 에셋은 메시지를 직관적으로 전달하고, 일관된 브랜드 이미지를 형성하는 핵심 시각 언어입니다. 로고 심볼의 기본 조형(B, P, T)를 확장하여 다양한 카테고리를 상징하는 그래픽으로 표현했습니다. 카테고리의 표현뿐만 아니라 다양한 인터렉션 요소로 확장할 수 있습니다.',
     theme: 'light'
   },
 
-  74: {
+  68: {
     title: 'ICONOGRAPHY',
     body: '',
     theme: 'light'
   },
 
-  76: {
+  70: {
     title: '3D ASSET',
     body: '',
     theme: 'dark'
@@ -872,19 +872,19 @@ if (pageNum === 14) {
 }
 
   
-  // ── PAGE 19: 4 IMAGE SLIDESHOW ──
-if (pageNum === 19) {
+  // ── PAGE 17: 4 IMAGE SLIDESHOW ──
+if (pageNum === 17) {
 
-  slot.classList.add('page19-slideshow-page');
+  slot.classList.add('page17-slideshow-page');
 
   const slideshow = document.createElement('div');
-  slideshow.className = 'page19-slideshow';
+  slideshow.className = 'page17-slideshow';
 
   const slideImages = [
-    'assets/images/page-19-01.png',
-    'assets/images/page-19-02.png',
-    'assets/images/page-19-03.png',
-    'assets/images/page-19-04.png'
+    'assets/images/page-17-01.png',
+    'assets/images/page-17-02.png',
+    'assets/images/page-17-03.png',
+    'assets/images/page-17-04.png'
   ];
 
 
@@ -897,7 +897,7 @@ if (pageNum === 19) {
 
     img.src = src;
     img.alt = '';
-    img.className = 'page19-slide';
+    img.className = 'page17-slide';
 
     /* 미리 로딩 */
     img.loading = 'eager';
