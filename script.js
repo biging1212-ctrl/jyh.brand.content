@@ -90,7 +90,7 @@ const VIDEO_PAGES = new Set([
 const PROJECT_START_META = {
 
   3: {
-    category: 'BRAND RETAI PROJECT',
+    category: 'BRAND RETAIL PROJECT',
     title: 'BIBIGO KIMCHI SAUCE',
     period: '2026.01',
     scope: 'Personal Study, 100%',
