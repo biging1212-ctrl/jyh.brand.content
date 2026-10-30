@@ -1804,15 +1804,15 @@ img, video { display: block; width: 100%; }
 
   animation:
     page06LogoScale
-      1300ms
+      850ms
       cubic-bezier(.59, 0, .08, 1)
-      183ms
+      80ms
       forwards,
 
     page06LogoOpacity
-      1500ms
+      900ms
       cubic-bezier(.3, 0, .45, .65)
-      300ms
+      100ms
       forwards;
 }
 
