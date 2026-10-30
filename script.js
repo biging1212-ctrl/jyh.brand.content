@@ -1577,6 +1577,12 @@ function addProjectIndex(slot) {
         preview.src =
           project.image;
 
+        preview.className = 'page02-project-preview';
+        if (project.previewClass) {
+          preview.classList.add(
+          project.previewClass
+          );
+        }
 
         preview.style.left =
           x(project.previewX);
