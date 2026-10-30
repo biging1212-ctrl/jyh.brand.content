@@ -1125,182 +1125,107 @@ img, video { display: block; width: 100%; }
 }
 
 /* ─────────────────────────────
-   PAGE 73 : CLOSING
+   CLOSING PAGE
 ───────────────────────────── */
 
 .closing-page {
   position: relative;
-
   width: 100%;
   max-width: 1920px;
   aspect-ratio: 16 / 9;
-
   margin: 0 auto;
-
   background: #000000;
   color: #ffffff;
-
   overflow: hidden;
-
   font-family: var(--font);
   container-type: inline-size;
 }
 
-
-/* ── 공통 좌우 작은 타이포 ── */
-
-.closing-side {
-  position: absolute;
-
-  font-family: var(--font);
-  font-weight: 500;
-
-  font-size: min(14px, 0.729167cqw);
-  line-height: 1.3;
-
-  color: #ffffff;
-  white-space: nowrap;
-}
-
-
-/* 좌측 상단 */
-
-.closing-top-left {
-  left: 5.2083%;    /* 100px / 1920 */
-  top: 10%;
-  text-align: left;
-}
-
-
-/* 우측 상단 */
-
-.closing-top-right {
-  right: 5.2083%;   /* 100px / 1920 */
-  top: 10%;
-  text-align: right;
-}
-
-
-/* ── 중앙 상단 이름 ── */
-
+/* 중앙 이름 */
 .closing-main-name {
   position: absolute;
-
   left: 50%;
-  top: 8.6%;
-
+  top: 36.8%;
   transform: translateX(-50%);
 
   font-family: var(--font);
   font-weight: 700;
-
-  font-size: min(70px, 3.645833cqw);
+  font-size: min(72px, 3.75cqw);
   line-height: 1;
+  letter-spacing: -0.03em;
+  color: #f3f3f3;
+  white-space: nowrap;
+  text-align: center;
+}
 
+/* 중앙 문구 */
+.closing-message {
+  position: absolute;
+  left: 50%;
+  top: 50.8%;
+  transform: translateX(-50%);
+
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: min(30px, 1.5625cqw);
+  line-height: 1.45;
   letter-spacing: -0.02em;
-
+  color: #ffffff;
+  text-align: center;
   white-space: nowrap;
 }
 
-
-/* ── 중앙 연락처 공통 ── */
-
+/* 하단 좌우 연락처 공통 */
 .closing-contact {
   position: absolute;
-
-  top: 48%;
+  bottom: 9.3%;
 
   display: flex;
   flex-direction: column;
-
   gap: 4px;
 
   font-family: var(--font);
 }
 
-
 .closing-contact-left {
-  left: 5.2083%;
+  left: 5.2083%;   /* 100px */
   text-align: left;
 }
 
-
 .closing-contact-right {
-  right: 5.2083%;
+  right: 5.2083%;  /* 100px */
   text-align: right;
 }
-
 
 .closing-label {
   font-size: min(14px, 0.729167cqw);
   font-weight: 400;
-
-  color: #8a8a8a;
-
   line-height: 1.2;
+  color: #8d8d8d;
 }
-
 
 .closing-value {
   font-size: min(16px, 0.833333cqw);
   font-weight: 400;
-
-  color: #ffffff;
-
   line-height: 1.2;
-}
-
-
-/* ── 중앙 메인 문구 ── */
-
-.closing-message {
-  position: absolute;
-
-  left: 50%;
-  top: 47.8%;
-
-  transform: translateX(-50%);
-
-  font-family: var(--font);
-  font-weight: 300;
-
-  font-size: min(32px, 1.666667cqw);
-
-  line-height: 1.45;
-  letter-spacing: -0.02em;
-
   color: #ffffff;
-
-  text-align: center;
-  white-space: nowrap;
 }
 
-
-/* ── 하단 WEB PORTFOLIO ── */
-
+/* 하단 중앙 텍스트 */
 .closing-web {
   position: absolute;
-
   left: 50%;
-  bottom: 9.5%;
-
+  bottom: 9.6%;
   transform: translateX(-50%);
 
   font-family: var(--font);
   font-size: min(14px, 0.729167cqw);
   font-weight: 400;
-
   line-height: 1.2;
-
   color: #ffffff;
-
   white-space: nowrap;
+  text-align: center;
 }
-
-.closing-web a:hover {
-  opacity: 0.6;
-}
-
 /* ── Footer ── */
 .footer {
   background: #676057;
@@ -1728,6 +1653,9 @@ img, video { display: block; width: 100%; }
   height:
     min(226px, 11.770833cqw)
     !important;
+
+  object-fit:
+    contain !important;
 }
 
 /* ─────────────────────────────
