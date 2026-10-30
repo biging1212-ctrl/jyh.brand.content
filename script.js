@@ -1334,7 +1334,7 @@ function addProjectIndex(slot) {
       barY: 540,
 
       previewX: 1326,
-      previewY: 340
+      previewY: 340,
       previewClass: 'page02-preview-binggrae'
     },
 
