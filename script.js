@@ -665,7 +665,7 @@ if (pageNum === 10) {
 
       currentSlide = nextSlide;
 
-    }, 3000);
+    }, 2000);
 
   });
 
@@ -799,13 +799,13 @@ if (pageNum === 14) {
       + 랜덤 간격 0~350ms
     */
 
-    let accumulatedDelay = 300;
+    let accumulatedDelay = 100;
 
 
     order.forEach((photo) => {
 
       const randomGap =
-        250 + Math.random() * 350;
+        100 + Math.random() * 150;
 
 
       accumulatedDelay += randomGap;
@@ -827,7 +827,7 @@ if (pageNum === 14) {
     */
 
     const totalDuration =
-      Math.max(accumulatedDelay + 1800, 5000);
+      Math.max(accumulatedDelay + 1000, 3200);
 
 
     setTimeout(() => {
