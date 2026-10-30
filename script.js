@@ -1630,6 +1630,8 @@ function addProjectIndex(slot) {
 
   slot.appendChild(layer);
 
+  }
+
 
 
 // ── Page 01 Name → NAV Scroll Animation ──
