@@ -1217,92 +1217,54 @@ if (pageNum === 46) {
   }
 }
 
-// ── Custom Cursor + Magnifier ──
+// ── Custom Cursor ──
 (function initCursor() {
-  const cursor = document.getElementById('custom-cursor');
+
+  const cursor =
+    document.getElementById('custom-cursor');
+
   if (!cursor) return;
 
-  let mx = 0, my = 0;
-  let isDown = false;
-  const ZOOM = 1.2;
-  const MAG_SIZE = 200;
 
-  // magnifier lens — a cloned <body> rendered at 120% inside the circle
-  const lens = document.createElement('div');
-  lens.style.cssText = `
-    position: absolute; top: 0; left: 0;
-    width: ${MAG_SIZE}px; height: ${MAG_SIZE}px;
-    border-radius: 50%; overflow: hidden;
-    pointer-events: none; display: none;
-  `;
-  const inner = document.createElement('div');
-  inner.style.cssText = `
-    position: absolute;
-    transform-origin: 0 0;
-    pointer-events: none;
-  `;
-  lens.appendChild(inner);
-  cursor.appendChild(lens);
+  document.addEventListener(
+    'mousemove',
+    (e) => {
 
-  function updateLensPos() {
-    const sx = window.scrollX || window.pageXOffset;
-    const sy = window.scrollY || window.pageYOffset;
-    const x = mx + sx;
-    const y = my + sy;
-    inner.style.transform = `scale(${ZOOM})`;
-    inner.style.left = (-x * ZOOM + MAG_SIZE / 2) + 'px';
-    inner.style.top  = (-y * ZOOM + MAG_SIZE / 2) + 'px';
-  }
+      cursor.style.left =
+        e.clientX + 'px';
 
-  function buildSnapshot() {
-    // clone entire body into lens
-    inner.innerHTML = '';
-    const clone = document.body.cloneNode(true);
-    // remove cursor from clone
-    const c = clone.querySelector('#custom-cursor');
-    if (c) c.remove();
-    // remove scripts
-    clone.querySelectorAll('script').forEach((s) => s.remove());
-    // set dimensions
-    clone.style.cssText = `
-      position: absolute; top: 0; left: 0;
-      width: ${document.body.scrollWidth}px;
-      margin: 0; padding: 0;
-      pointer-events: none;
-    `;
-    inner.appendChild(clone);
-    inner.style.width  = document.body.scrollWidth + 'px';
-    inner.style.height = document.body.scrollHeight + 'px';
-  }
+      cursor.style.top =
+        e.clientY + 'px';
 
-  document.addEventListener('mousemove', (e) => {
-    mx = e.clientX;
-    my = e.clientY;
-    cursor.style.left = mx + 'px';
-    cursor.style.top  = my + 'px';
-    if (!cursor.classList.contains('visible')) cursor.classList.add('visible');
-    if (isDown) updateLensPos();
-  });
+      if (
+        !cursor.classList.contains('visible')
+      ) {
+        cursor.classList.add('visible');
+      }
 
-  document.addEventListener('mouseleave', () => cursor.classList.remove('visible'));
-  document.addEventListener('mouseenter', () => cursor.classList.add('visible'));
+    }
+  );
 
-  document.addEventListener('mousedown', (e) => {
-    if (e.target.closest('.nav, button, a, .upload-zone')) return;
-    isDown = true;
-    cursor.classList.add('magnify');
-    lens.style.display = 'block';
-    buildSnapshot();
-    updateLensPos();
-  });
 
-  document.addEventListener('mouseup', () => {
-    if (!isDown) return;
-    isDown = false;
-    cursor.classList.remove('magnify');
-    lens.style.display = 'none';
-    inner.innerHTML = '';
-  });
+  document.addEventListener(
+    'mouseleave',
+    () => {
+
+      cursor.classList.remove('visible');
+
+    }
+  );
+
+
+  document.addEventListener(
+    'mouseenter',
+    () => {
+
+      cursor.classList.add('visible');
+
+    }
+  );
+
 })();
 
 // ── Active nav highlight ──
@@ -1373,6 +1335,7 @@ function addProjectIndex(slot) {
 
       previewX: 1326,
       previewY: 340
+      previewClass: 'page02-preview-binggrae'
     },
 
 
