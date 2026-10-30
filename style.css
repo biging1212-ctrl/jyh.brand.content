@@ -37,13 +37,6 @@ html { scroll-behavior: smooth; cursor: none; }
 
 .custom-cursor.visible { opacity: 1; }
 
-/* Magnifier mode — on mousedown */
-.custom-cursor.magnify {
-  width: 200px;
-  height: 200px;
-  background: transparent;
-  transition: width 0.2s ease, height 0.2s ease, transform 0.08s ease-out;
-}
 
 body {
   background: var(--black);
