@@ -1170,6 +1170,26 @@ function renderMedia(slot, zone, type, src) {
   vid.playsInline = true;
   vid.muted = true;
   vid.controls = false;
+
+  // PAGE 46: 마우스가 페이지 안에 있을 때만 소리 재생
+if (pageNum === 46) {
+  vid.volume = 0.5;
+  vid.muted = true;
+
+  slot.addEventListener('mouseenter', () => {
+    vid.volume = 0.5;
+    vid.muted = false;
+
+    const playPromise = vid.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {});
+    }
+  });
+
+  slot.addEventListener('mouseleave', () => {
+    vid.muted = true;
+  });
+}
     
   slot.appendChild(vid);  
   } else {
