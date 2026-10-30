@@ -1325,205 +1325,306 @@ const navObserver = new IntersectionObserver(
 trackedSections.forEach((s) => navObserver.observe(s));
 
 function addProjectIndex(slot) {
+
   const projects = [
+
     {
-      num: '(01)',
       title: 'KIMCHI SAUCE',
-      desc: 'Package',
-      image: 'assets/images/project-01.png',
+      desc: 'BRAND RETAIL / PERSONAL',
+      range: '( 03 - 19 )',
+
+      image: 'assets/images/page-02-kimchi.png',
       target: '#page-03',
 
-      imgX: 200,
-      imgY: 474,
-      imgW: 200,
-      imgH: 283,
+      barX: 145,
+      barY: 396,
 
-      numY: 439,
-
-      titleY: 777,
-
-      descY: 798
+      previewX: 145,
+      previewY: 441
     },
 
-    {
-      num: '(02)',
-      title: 'OATERY',
-      desc: 'Brand Package',
-      image: 'assets/images/project-02.png',
-      target: '#page-20',
-
-      imgX: 466,
-      imgY: 474,
-      imgW: 200,
-      imgH: 180,
-
-      numY: 439,
-      titleY: 674,
-      descY: 695
-    },
 
     {
-      num: '(03)',
       title: 'WINKLE',
-      desc: 'Brand Package',
-      image: 'assets/images/project-03.png',
-      target: '#page-35',
+      desc: 'BRANDING / PERSONAL',
+      range: '( 20 - 35 )',
 
-      imgX: 732,
-      imgY: 474,
-      imgW: 200,
-      imgH: 354,
+      image: 'assets/images/page-02-winkle.png',
+      target: '#page-19',
 
-      numY: 439,
-      titleY: 848,
-      descY: 869
+      barX: 395,
+      barY: 468,
+
+      previewX: 395,
+      previewY: 513
     },
 
+
     {
-      num: '(04)',
+      title: 'BINGGRAE',
+      desc: 'POP - UP STORE & CONTENT / 실무',
+      range: '( 36 - 47 )',
+
+      image: 'assets/images/page-02-binggrae.png',
+      target: '#page-36',
+
+      barX: 645,
+      barY: 540,
+
+      previewX: 1326,
+      previewY: 340
+    },
+
+
+    {
       title: 'ORION',
-      desc: 'Sns Content / 실무',
-      image: 'assets/images/project-04.png',
-      target: '#page-52',
+      desc: 'SNS CONTENT / 실무',
+      range: '( 48 - 53 )',
 
-      imgX: 998,
-      imgY: 474,
-      imgW: 200,
-      imgH: 180,
+      image: 'assets/images/page-02-orion.png',
+      target: '#page-48',
 
-      numY: 439,
+      barX: 895,
+      barY: 612,
 
-      titleY: 674,
-
-      descY: 695
+      previewX: 1576,
+      previewY: 412
     },
 
+
     {
-      num: '(05)',
-      title: '3.3',
-      desc: 'Pop - Up Store / 실무',
-      image: 'assets/images/project-05.png',
-      target: '#page-58',
+      title: 'LOTTE CHILSUNG',
+      desc: 'SNS CONTENT / 실무',
+      range: '( 54 - 60 )',
 
-      imgX: 1264,
-      imgY: 474,
-      imgW: 200,
-      imgH: 283,
+      image: 'assets/images/page-02-lotte.png',
+      target: '#page-54',
 
-      numY: 439,
-      titleY: 777,
-      descY: 798
+      barX: 645,
+      barY: 684,
+
+      previewX: 1326,
+      previewY: 729
     },
 
+
     {
-      num: '(06)',
       title: 'BPT',
-      desc: 'Rebranding / 실무',
-      image: 'assets/images/project-06.png',
-      target: '#page-67',
+      desc: 'REBRANDING / 실무',
+      range: '( 61 - 72 )',
 
-      imgX: 1530,
-      imgY: 474,
-      imgW: 200,
-      imgH: 180,
+      image: 'assets/images/page-02-bpt.png',
+      target: '#page-61',
 
-      numY: 439,
-      titleY: 674,
-      descY: 695
+      barX: 395,
+      barY: 756,
+
+      previewX: 1076,
+      previewY: 837
     }
+
   ];
 
 
   const layer = document.createElement('div');
   layer.className = 'page02-project-layer';
-  
-  layer.innerHTML += `
-    <!-- 좌상단 / 우상단 -->
-    <div class="page02-kicker page02-kicker-left">INTRODUCE</div>
-    <div class="page02-kicker page02-kicker-right">CONTENTS</div>
 
-    <!-- 중앙 메인 문구 -->
-    <div class="page02-headline">
-      <span class="light">브랜드의 </span><span class="semibold">지금을 읽고,</span><br>
-      <span class="semibold">다음을</span><span class="light"> 그리는 디자이너 전영현입니다.</span>
+
+  /* ─────────────────────────────
+     PAGE 02 상단 텍스트
+  ───────────────────────────── */
+
+  layer.innerHTML = `
+
+    <div class="page02-kicker page02-kicker-left">
+      INTRODUCE
     </div>
 
-    <!-- 연락처 -->
-    <div class="page02-contact">010.4079.5374 / biging1212@gmail.com</div>
-    <div class="page02-guide">
-    *이미지 선택 시, 해당 프로젝트로 이동 가능합니다.
-  </div>
+    <div class="page02-kicker page02-kicker-right">
+      CONTENTS
+    </div>
+
+
+    <div class="page02-headline">
+
+      <span class="light">
+        브랜드의
+      </span>
+
+      <span class="semibold">
+        지금을 읽고,
+      </span>
+
+      <br>
+
+      <span class="semibold">
+        다음을 만드는
+      </span>
+
+      <span class="light">
+        디자이너 전영현입니다.
+      </span>
+
+    </div>
+
+
+    <div class="page02-contact">
+      010.4079.5374 / biging1212@gmail.com
+    </div>
+
   `;
 
 
-  // 1920 × 1080 Figma 좌표 → 반응형 % 좌표
-  const x = (value) => `${(value / 1920) * 100}%`;
-  const y = (value) => `${(value / 1080) * 100}%`;
+  /* ─────────────────────────────
+     FIGMA 1920 × 1080 → %
+  ───────────────────────────── */
 
+  const x = (value) =>
+    `${(value / 1920) * 100}%`;
+
+  const y = (value) =>
+    `${(value / 1080) * 100}%`;
+
+
+  /* ─────────────────────────────
+     대표 이미지
+
+     한 개만 만들고
+     hover된 프로젝트에 따라
+     이미지/위치만 변경
+  ───────────────────────────── */
+
+  const preview =
+    document.createElement('img');
+
+  preview.className =
+    'page02-project-preview';
+
+  preview.alt = '';
+
+  layer.appendChild(preview);
+
+
+
+  /* ─────────────────────────────
+     PROJECT BAR
+  ───────────────────────────── */
 
   projects.forEach((project) => {
 
-    layer.innerHTML += `
-
-      <!-- 프로젝트 번호 -->
-      <span
-        class="page02-text page02-num"
-        style="
-          left:${x(project.imgX)};
-          top:${y(project.numY)};
-          width:${x(project.imgW)};
-        "
-      >
-        ${project.num}
-      </span>
+    const bar =
+      document.createElement('a');
 
 
-      <!-- 프로젝트 이미지 -->
-      <a
-        class="page02-thumb"
-        href="${project.target}"
-        style="
-          left:${x(project.imgX)};
-          top:${y(project.imgY)};
-          width:${x(project.imgW)};
-          height:${y(project.imgH)};
-        "
-      >
-        <img src="${project.image}" alt="" />
-      </a>
+    bar.className =
+      'page02-project-bar';
 
 
-      <!-- 프로젝트명 -->
-      <span
-        class="page02-text page02-title"
-        style="
-          left:${x(project.imgX)};
-          top:${y(project.titleY)};
-          width:${x(project.imgW)};
-        "
-      >
-        ${project.title}
-      </span>
+    bar.href =
+      project.target;
 
 
-      <!-- 프로젝트 설명 -->
-      <span
-        class="page02-text page02-desc"
-        style="
-          left:${x(project.imgX)};
-          top:${y(project.descY)};
-          width:${x(project.imgW)};
-        "
-      >
-        ${project.desc}
+    /* 정확한 Figma 좌표 */
+
+    bar.style.left =
+      x(project.barX);
+
+    bar.style.top =
+      y(project.barY);
+
+    bar.style.width =
+      x(881);
+
+    bar.style.height =
+      y(45);
+
+
+    /* 막대 내부 */
+
+    bar.innerHTML = `
+
+      <div class="page02-bar-left">
+
+        <span class="page02-bar-title">
+          ${project.title}
+        </span>
+
+
+        <span class="page02-bar-divider">
+        </span>
+
+
+        <span class="page02-bar-desc">
+          ${project.desc}
+        </span>
+
+      </div>
+
+
+      <span class="page02-bar-range">
+        ${project.range}
       </span>
 
     `;
+
+
+    /* ── HOVER IN ── */
+
+    bar.addEventListener(
+      'mouseenter',
+      () => {
+
+        preview.src =
+          project.image;
+
+
+        preview.style.left =
+          x(project.previewX);
+
+        preview.style.top =
+          y(project.previewY);
+
+
+        preview.classList.add(
+          'is-visible'
+        );
+
+
+        bar.classList.add(
+          'is-active'
+        );
+
+      }
+    );
+
+
+    /* ── HOVER OUT ── */
+
+    bar.addEventListener(
+      'mouseleave',
+      () => {
+
+        preview.classList.remove(
+          'is-visible'
+        );
+
+
+        bar.classList.remove(
+          'is-active'
+        );
+
+      }
+    );
+
+
+    layer.appendChild(bar);
+
   });
 
 
   slot.appendChild(layer);
-}
+
+
 
 // ── Page 01 Name → NAV Scroll Animation ──
 (function initNameToNavAnimation() {
