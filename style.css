@@ -1573,65 +1573,57 @@ img, video { display: block; width: 100%; }
    PROJECT PREVIEW IMAGE
 ───────────────────────────── */
 
-.portfolio-slot
-.page02-project-preview {
+.portfolio-slot .page02-project-preview {
 
   position: absolute;
 
-  /*
-    1920px 기준 정확히 200px
-  */
-  width:
-    min(200px, 10.416667cqw)
-    !important;
+  width: min(200px, 10.416667cqw) !important;
+  height: min(200px, 10.416667cqw) !important;
 
-  height:
-    min(200px, 10.416667cqw)
-    !important;
+  object-fit: cover !important;
 
-  object-fit:
-    cover !important;
+  /* 기본 상태에서 완전히 숨김 */
+  display: none;
 
-  display: block;
-
-  /*
-    막대보다 아래에 배치
-    → 두 번째 참고 이미지처럼
-       막대가 이미지 위로 지나감
-  */
-  z-index: 7;
-
-  /*
-    기본은 안 보임
-  */
-  opacity: 0;
-
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
 
   pointer-events: none;
 
-  transform:
-    scale(0.97);
+  transform: none;
+  transition: none;
 
-  transition:
-    opacity 0.18s ease,
-    transform 0.18s ease,
-    visibility 0.18s ease;
+  /* 막대보다 아래 */
+  z-index: 7;
+
 }
 
 
+/* 선택한 이미지 하나만 표시 */
 
-/* Hover 중인 이미지 */
+.portfolio-slot .page02-project-preview.is-visible {
 
-.portfolio-slot
-.page02-project-preview.is-visible {
+  display: block;
 
-  opacity: 1;
+  animation: page02PreviewEnter 0.18s ease-out both;
 
-  visibility: visible;
+}
 
-  transform:
-    scale(1);
+
+/* 이미지가 나타날 때만 애니메이션 */
+
+@keyframes page02PreviewEnter {
+
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
 }
 
 /* ── BINGGRAE 대표 이미지만 200 × 226 ── */
