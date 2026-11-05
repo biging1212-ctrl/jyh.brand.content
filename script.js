@@ -1546,7 +1546,26 @@ function addProjectIndex(slot) {
 
     `;
 
+/* ── HOVER IN ── */
 
+const showPreview = () => {
+
+  // 다른 프로젝트 이미지는 모두 숨기고
+  // 현재 프로젝트 이미지만 표시
+  previews.forEach((img, imageIndex) => {
+
+    img.classList.toggle(
+      'is-visible',
+      imageIndex === index
+    );
+
+  });
+
+  // 현재 막대 활성화
+  bar.classList.add('is-active');
+
+};
+    
 /* ── HOVER OUT ── */
 
 const hidePreview = () => {
