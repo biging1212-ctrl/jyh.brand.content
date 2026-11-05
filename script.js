@@ -1457,23 +1457,39 @@ function addProjectIndex(slot) {
      이미지/위치만 변경
   ───────────────────────────── */
 
-  const preview =
-    document.createElement('img');
-
-  preview.className =
-    'page02-project-preview';
-
-  preview.alt = '';
-
-  layer.appendChild(preview);
-
+  const previews = [];
 
 
   /* ─────────────────────────────
      PROJECT BAR
   ───────────────────────────── */
 
-  projects.forEach((project) => {
+  projects.forEach((project, index) => {
+
+    // 각 프로젝트별 대표 이미지 생성
+    const preview = document.createElement('img');
+
+    preview.className = 'page02-project-preview';
+
+    // 빙그레 이미지 전용 CSS 적용
+    if (project.previewClass) {
+      preview.classList.add(project.previewClass);
+    }
+
+    // 프로젝트별 이미지와 위치 연결
+    preview.src = project.image;
+    preview.alt = `${project.title} 대표 이미지`;
+
+    preview.loading = 'eager';
+    preview.decoding = 'async';
+
+    preview.style.left = x(project.previewX);
+    preview.style.top = y(project.previewY);
+
+    layer.appendChild(preview);
+
+    // 대표 이미지 배열에 저장
+    previews.push(preview);
 
     const bar =
       document.createElement('a');
@@ -1531,59 +1547,25 @@ function addProjectIndex(slot) {
     `;
 
 
-    /* ── HOVER IN ── */
+/* ── HOVER OUT ── */
 
-    bar.addEventListener(
-      'mouseenter',
-      () => {
+const hidePreview = () => {
 
-        preview.src =
-          project.image;
+  // 현재 막대에 연결된 이미지만 숨김
+  preview.classList.remove('is-visible');
 
-        preview.className = 'page02-project-preview';
-        if (project.previewClass) {
-          preview.classList.add(
-          project.previewClass
-          );
-        }
+  bar.classList.remove('is-active');
 
-        preview.style.left =
-          x(project.previewX);
-
-        preview.style.top =
-          y(project.previewY);
+};
 
 
-        preview.classList.add(
-          'is-visible'
-        );
+// 마우스 이벤트
+bar.addEventListener('mouseenter', showPreview);
+bar.addEventListener('mouseleave', hidePreview);
 
-
-        bar.classList.add(
-          'is-active'
-        );
-
-      }
-    );
-
-
-    /* ── HOVER OUT ── */
-
-    bar.addEventListener(
-      'mouseleave',
-      () => {
-
-        preview.classList.remove(
-          'is-visible'
-        );
-
-
-        bar.classList.remove(
-          'is-active'
-        );
-
-      }
-    );
+// 키보드 접근 지원
+bar.addEventListener('focus', showPreview);
+bar.addEventListener('blur', hidePreview);
 
 
     layer.appendChild(bar);
